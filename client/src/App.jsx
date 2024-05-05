@@ -2,20 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import '../styles.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-
-      <header className="header">
-        <div className="logo">
-          <span className="course">React Workshop - September 2023</span>
-        </div>
-      </header>
-
-
+      <Header />
+      
       <main className="main">
 
         <section className="card users-container">
@@ -458,9 +454,7 @@ function App() {
 
       </main>
 
-      <footer className="footer">
-        <p>This site is designed to be used for training purposes at SoftUni.</p>
-      </footer>
+      <Footer />
     </>
   )
 }
